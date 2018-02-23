@@ -34,7 +34,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // button1 as classroom registration
             // 
             this.button1.BackColor = System.Drawing.SystemColors.HighlightText;
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -49,7 +49,7 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // button2 as view schedule
             // 
             this.button2.BackColor = System.Drawing.SystemColors.HighlightText;
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -64,7 +64,7 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // button3 as the Logout
             // 
             this.button3.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
