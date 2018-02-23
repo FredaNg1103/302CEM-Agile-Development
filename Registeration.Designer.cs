@@ -72,7 +72,7 @@ namespace CnL_Scheduling
             this.WelcomeMessage.Text = "Welcome, User";
             this.WelcomeMessage.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // LogoutBtn
+            // LogoutButton
             // 
             this.LogoutBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LogoutBtn.Image = ((System.Drawing.Image)(resources.GetObject("LogoutBtn.Image")));
