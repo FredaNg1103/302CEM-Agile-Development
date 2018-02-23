@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApp1
+﻿namespace CnL_Scheduling
 {
     partial class Login
     {
