@@ -34,18 +34,23 @@ namespace CnL_Scheduling
             this.BackBtn = new System.Windows.Forms.Button();
             this.DateLabel = new System.Windows.Forms.Label();
             this.dateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.CnC_List = new System.Windows.Forms.ComboBox();
+            this.CCL_List = new System.Windows.Forms.ComboBox();
             this.CheckBtn = new System.Windows.Forms.Button();
             this.Classroom_rdb = new System.Windows.Forms.RadioButton();
             this.Course_rdb = new System.Windows.Forms.RadioButton();
+            this.Lecturer_rdb = new System.Windows.Forms.RadioButton();
+            this.Schedule_lv = new System.Windows.Forms.ListView();
+            this.Line = new System.Windows.Forms.Label();
+            this.RadioMessage = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // WelcomeMessage
             // 
             this.WelcomeMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.WelcomeMessage.Location = new System.Drawing.Point(704, 12);
+            this.WelcomeMessage.Location = new System.Drawing.Point(146, 10);
+            this.WelcomeMessage.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.WelcomeMessage.Name = "WelcomeMessage";
-            this.WelcomeMessage.Size = new System.Drawing.Size(390, 25);
+            this.WelcomeMessage.Size = new System.Drawing.Size(292, 20);
             this.WelcomeMessage.TabIndex = 3;
             this.WelcomeMessage.Text = "Welcome, User";
             this.WelcomeMessage.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -54,9 +59,10 @@ namespace CnL_Scheduling
             // 
             this.LogoutBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LogoutBtn.Image = ((System.Drawing.Image)(resources.GetObject("LogoutBtn.Image")));
-            this.LogoutBtn.Location = new System.Drawing.Point(1100, 12);
+            this.LogoutBtn.Location = new System.Drawing.Point(442, 10);
+            this.LogoutBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.LogoutBtn.Name = "LogoutBtn";
-            this.LogoutBtn.Size = new System.Drawing.Size(70, 70);
+            this.LogoutBtn.Size = new System.Drawing.Size(60, 65);
             this.LogoutBtn.TabIndex = 2;
             this.LogoutBtn.UseVisualStyleBackColor = true;
             this.LogoutBtn.Click += new System.EventHandler(this.LogoutBtn_Click);
@@ -64,9 +70,10 @@ namespace CnL_Scheduling
             // BackBtn
             // 
             this.BackBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BackBtn.Location = new System.Drawing.Point(1057, 699);
+            this.BackBtn.Location = new System.Drawing.Point(418, 568);
+            this.BackBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BackBtn.Name = "BackBtn";
-            this.BackBtn.Size = new System.Drawing.Size(113, 42);
+            this.BackBtn.Size = new System.Drawing.Size(85, 34);
             this.BackBtn.TabIndex = 17;
             this.BackBtn.Text = "Back";
             this.BackBtn.UseVisualStyleBackColor = true;
@@ -76,9 +83,10 @@ namespace CnL_Scheduling
             // 
             this.DateLabel.AutoSize = true;
             this.DateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DateLabel.Location = new System.Drawing.Point(50, 100);
+            this.DateLabel.Location = new System.Drawing.Point(38, 81);
+            this.DateLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.DateLabel.Name = "DateLabel";
-            this.DateLabel.Size = new System.Drawing.Size(81, 29);
+            this.DateLabel.Size = new System.Drawing.Size(63, 24);
             this.DateLabel.TabIndex = 18;
             this.DateLabel.Text = "Date : ";
             // 
@@ -86,38 +94,43 @@ namespace CnL_Scheduling
             // 
             this.dateTimePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker.Location = new System.Drawing.Point(137, 100);
+            this.dateTimePicker.Location = new System.Drawing.Point(103, 81);
+            this.dateTimePicker.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dateTimePicker.Name = "dateTimePicker";
-            this.dateTimePicker.Size = new System.Drawing.Size(228, 30);
+            this.dateTimePicker.Size = new System.Drawing.Size(172, 26);
             this.dateTimePicker.TabIndex = 19;
             this.dateTimePicker.Value = new System.DateTime(2018, 2, 22, 2, 8, 51, 0);
             // 
-            // CnC_List
+            // CCL_List
             // 
-            this.CnC_List.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CnC_List.FormattingEnabled = true;
-            this.CnC_List.Location = new System.Drawing.Point(55, 226);
-            this.CnC_List.Name = "CnC_List";
-            this.CnC_List.Size = new System.Drawing.Size(310, 37);
-            this.CnC_List.TabIndex = 21;
+            this.CCL_List.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CCL_List.FormattingEnabled = true;
+            this.CCL_List.Location = new System.Drawing.Point(41, 163);
+            this.CCL_List.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CCL_List.Name = "CCL_List";
+            this.CCL_List.Size = new System.Drawing.Size(234, 30);
+            this.CCL_List.TabIndex = 21;
             // 
             // CheckBtn
             // 
             this.CheckBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CheckBtn.Location = new System.Drawing.Point(406, 222);
+            this.CheckBtn.Location = new System.Drawing.Point(304, 160);
+            this.CheckBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CheckBtn.Name = "CheckBtn";
-            this.CheckBtn.Size = new System.Drawing.Size(113, 42);
+            this.CheckBtn.Size = new System.Drawing.Size(85, 34);
             this.CheckBtn.TabIndex = 22;
             this.CheckBtn.Text = "Check";
             this.CheckBtn.UseVisualStyleBackColor = true;
+            this.CheckBtn.Click += new System.EventHandler(this.CheckBtn_Click);
             // 
             // Classroom_rdb
             // 
             this.Classroom_rdb.AutoSize = true;
             this.Classroom_rdb.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Classroom_rdb.Location = new System.Drawing.Point(55, 174);
+            this.Classroom_rdb.Location = new System.Drawing.Point(41, 121);
+            this.Classroom_rdb.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Classroom_rdb.Name = "Classroom_rdb";
-            this.Classroom_rdb.Size = new System.Drawing.Size(150, 33);
+            this.Classroom_rdb.Size = new System.Drawing.Size(117, 28);
             this.Classroom_rdb.TabIndex = 0;
             this.Classroom_rdb.TabStop = true;
             this.Classroom_rdb.Text = "Classroom";
@@ -128,29 +141,80 @@ namespace CnL_Scheduling
             // 
             this.Course_rdb.AutoSize = true;
             this.Course_rdb.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Course_rdb.Location = new System.Drawing.Point(211, 174);
+            this.Course_rdb.Location = new System.Drawing.Point(158, 121);
+            this.Course_rdb.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Course_rdb.Name = "Course_rdb";
-            this.Course_rdb.Size = new System.Drawing.Size(112, 33);
+            this.Course_rdb.Size = new System.Drawing.Size(89, 28);
             this.Course_rdb.TabIndex = 1;
             this.Course_rdb.TabStop = true;
             this.Course_rdb.Text = "Course";
             this.Course_rdb.UseVisualStyleBackColor = true;
             this.Course_rdb.CheckedChanged += new System.EventHandler(this.Course_rdb_CheckedChanged);
             // 
+            // Lecturer_rdb
+            // 
+            this.Lecturer_rdb.AutoSize = true;
+            this.Lecturer_rdb.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lecturer_rdb.Location = new System.Drawing.Point(247, 121);
+            this.Lecturer_rdb.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Lecturer_rdb.Name = "Lecturer_rdb";
+            this.Lecturer_rdb.Size = new System.Drawing.Size(97, 28);
+            this.Lecturer_rdb.TabIndex = 23;
+            this.Lecturer_rdb.TabStop = true;
+            this.Lecturer_rdb.Text = "Lecturer";
+            this.Lecturer_rdb.UseVisualStyleBackColor = true;
+            this.Lecturer_rdb.CheckedChanged += new System.EventHandler(this.Lecturer_rdb_CheckedChanged);
+            // 
+            // Schedule_lv
+            // 
+            this.Schedule_lv.Location = new System.Drawing.Point(9, 264);
+            this.Schedule_lv.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Schedule_lv.Name = "Schedule_lv";
+            this.Schedule_lv.Size = new System.Drawing.Size(494, 292);
+            this.Schedule_lv.TabIndex = 24;
+            this.Schedule_lv.UseCompatibleStateImageBehavior = false;
+            this.Schedule_lv.View = System.Windows.Forms.View.Details;
+            // 
+            // Line
+            // 
+            this.Line.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Line.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Line.Location = new System.Drawing.Point(9, 242);
+            this.Line.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Line.Name = "Line";
+            this.Line.Size = new System.Drawing.Size(494, 2);
+            this.Line.TabIndex = 25;
+            // 
+            // RadioMessage
+            // 
+            this.RadioMessage.AutoSize = true;
+            this.RadioMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RadioMessage.ForeColor = System.Drawing.Color.Red;
+            this.RadioMessage.Location = new System.Drawing.Point(38, 196);
+            this.RadioMessage.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.RadioMessage.Name = "RadioMessage";
+            this.RadioMessage.Size = new System.Drawing.Size(0, 20);
+            this.RadioMessage.TabIndex = 29;
+            // 
             // Scheduling
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1182, 753);
+            this.ClientSize = new System.Drawing.Size(512, 597);
+            this.Controls.Add(this.RadioMessage);
+            this.Controls.Add(this.Line);
+            this.Controls.Add(this.Schedule_lv);
+            this.Controls.Add(this.Lecturer_rdb);
             this.Controls.Add(this.Course_rdb);
             this.Controls.Add(this.CheckBtn);
             this.Controls.Add(this.Classroom_rdb);
-            this.Controls.Add(this.CnC_List);
+            this.Controls.Add(this.CCL_List);
             this.Controls.Add(this.dateTimePicker);
             this.Controls.Add(this.DateLabel);
             this.Controls.Add(this.BackBtn);
             this.Controls.Add(this.WelcomeMessage);
             this.Controls.Add(this.LogoutBtn);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Scheduling";
             this.Text = "Scheduling";
             this.ResumeLayout(false);
@@ -165,9 +229,13 @@ namespace CnL_Scheduling
         private System.Windows.Forms.Button BackBtn;
         private System.Windows.Forms.Label DateLabel;
         private System.Windows.Forms.DateTimePicker dateTimePicker;
-        private System.Windows.Forms.ComboBox CnC_List;
+        private System.Windows.Forms.ComboBox CCL_List;
         private System.Windows.Forms.Button CheckBtn;
         private System.Windows.Forms.RadioButton Classroom_rdb;
         private System.Windows.Forms.RadioButton Course_rdb;
+        private System.Windows.Forms.RadioButton Lecturer_rdb;
+        private System.Windows.Forms.ListView Schedule_lv;
+        private System.Windows.Forms.Label Line;
+        private System.Windows.Forms.Label RadioMessage;
     }
 }
