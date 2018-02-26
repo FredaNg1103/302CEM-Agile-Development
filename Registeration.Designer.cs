@@ -1,4 +1,4 @@
-namespace CnL_Scheduling
+﻿namespace CnL_Scheduling
 {
     partial class Registeration
     {
@@ -65,20 +65,20 @@ namespace CnL_Scheduling
             // WelcomeMessage
             // 
             this.WelcomeMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.WelcomeMessage.Location = new System.Drawing.Point(304, 12);
+            this.WelcomeMessage.Location = new System.Drawing.Point(294, 12);
             this.WelcomeMessage.Name = "WelcomeMessage";
             this.WelcomeMessage.Size = new System.Drawing.Size(390, 25);
             this.WelcomeMessage.TabIndex = 3;
             this.WelcomeMessage.Text = "Welcome, User";
             this.WelcomeMessage.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // LogoutButton
+            // LogoutBtn
             // 
             this.LogoutBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LogoutBtn.Image = ((System.Drawing.Image)(resources.GetObject("LogoutBtn.Image")));
-            this.LogoutBtn.Location = new System.Drawing.Point(700, 12);
+            this.LogoutBtn.Location = new System.Drawing.Point(690, 12);
             this.LogoutBtn.Name = "LogoutBtn";
-            this.LogoutBtn.Size = new System.Drawing.Size(70, 70);
+            this.LogoutBtn.Size = new System.Drawing.Size(80, 80);
             this.LogoutBtn.TabIndex = 2;
             this.LogoutBtn.UseVisualStyleBackColor = true;
             this.LogoutBtn.Click += new System.EventHandler(this.LogoutBtn_Click);
@@ -444,3 +444,4 @@ namespace CnL_Scheduling
         private System.Windows.Forms.Label LecturerLabel;
     }
 }
+

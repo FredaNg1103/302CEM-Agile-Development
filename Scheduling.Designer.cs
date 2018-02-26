@@ -1,4 +1,4 @@
-namespace CnL_Scheduling
+﻿namespace CnL_Scheduling
 {
     partial class Scheduling
     {
@@ -239,3 +239,4 @@ namespace CnL_Scheduling
         private System.Windows.Forms.Label RadioMessage;
     }
 }
+
