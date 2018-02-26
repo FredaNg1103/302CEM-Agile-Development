@@ -444,3 +444,4 @@
         private System.Windows.Forms.Label LecturerLabel;
     }
 }
+

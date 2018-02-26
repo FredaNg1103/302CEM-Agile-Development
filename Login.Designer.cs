@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+
             this.UserLabel = new System.Windows.Forms.Label();
             this.PassLabel = new System.Windows.Forms.Label();
             this.UserTextBox = new System.Windows.Forms.TextBox();

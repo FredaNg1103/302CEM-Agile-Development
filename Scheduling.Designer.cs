@@ -239,3 +239,4 @@
         private System.Windows.Forms.Label RadioMessage;
     }
 }
+
